@@ -1,0 +1,8 @@
+<h1> Cows </h1>
+<hr>
+
+<div class="card-columns">
+
+  <app-card (selectedCow)="verCow( $event )" [cow]="foo" [index]="i"  *ngFor="let foo of cows; let i = index"></app-card>
+
+</div>

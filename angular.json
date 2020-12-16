@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "cow-app"
+    }
+  },
+  "defaultProject": "cow-app",
+  "cli": {
+    "analytics": "b0db10ea-b030-4159-ac7b-c0a17bfd8529"
+  }
 }

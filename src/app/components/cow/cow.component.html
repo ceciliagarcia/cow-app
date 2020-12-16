@@ -1,0 +1,25 @@
+<h1 class="animated fadeIn">{{ cow.name | uppercase }} <small>({{ cow.date_birth | date:'y' }})</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast">
+
+  <div class="col-md-4">
+
+    <img [src]="cow.img" class="img-fluid" [alt]="cow.name">
+    <br><br>
+    <a [routerLink]="['/cows']" class="btn btn-outline-danger btn-block">Regresar</a>
+
+  </div>
+
+  <div class="col-md-8">
+    <h3>{{ cow.name }}</h3>
+    <hr>
+    <p>
+      {{ cow.sex }}
+    </p>
+   
+
+
+  </div>
+
+</div>

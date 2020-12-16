@@ -1,0 +1,19 @@
+<h1>Searching: <small>{{ termino }}</small></h1>
+<hr>
+
+<div class="row animated fadeIn fast" *ngIf="cows.length === 0">
+  <div class="col-md-12">
+    <div class="alert alert-info" role="alert">
+      There are no results with:: {{ termino }}
+    </div>
+  </div>
+</div>
+
+
+<div class="card-columns">
+
+  <app-card [cow]="foo" [index]="foo.idx"  *ngFor="let foo of cows"></app-card>
+
+
+
+</div>
